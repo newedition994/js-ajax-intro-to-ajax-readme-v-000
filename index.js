@@ -18,3 +18,8 @@ function getCommits(el) {
   req.open("GET", 'https://api.github.com/users/octocat/repos')
   req.send()
 }
+
+function showCommits() {
+  const commits = JSON.parse(this.responseText)
+  const commitsList = `<ul>${}</ul>`
+}
